@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- LOGOTIPO -->
+    <header class="header">
+        <img src="./img/Media-Box-Logo.png" width="200px" alt="">
+    </header>
+
+    <!-- MENU DE NAVEGACION -->
+    <nav class="header">
+        <ul class="header__nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="videojuegos.html">Videojuegos</a></li>
+            <li><a href="peliculas.html">Peliculas</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- BANNER HERO -->
+    <section class="bannerContacto">
+        <h1 class="bannerCategory__title">CONTACTO</h1>
+    </section>
+    
+    <!-- CONTENIDO WEB -->
+    <div>
+
+        <!-- CONTACTO INFO -->
+        <section class="categoryNoticias">
+            <article class="categoryNoticas__card">
+                <h2>INFO</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar tincidunt consectetur. Integer vehicula odio at quam sagittis ornare. Pellentesque aliquam ipsum arcu, in aliquam purus tempus non. Vestibulum aliquam fermentum molestie. Aenean enim metus, porta vel leo sed, sagittis tincidunt sem. Maecenas convallis nunc nec convallis egestas. In ultricies libero vel nibh congue, ut sodales magna mattis.
+                </p>
+                <br>
+                <p>
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris erat tortor, vehicula ut tristique vehicula, pulvinar quis turpis. Aliquam imperdiet purus ut fermentum consectetur. Donec bibendum sem lorem, vitae interdum orci ornare eu. Sed varius porta facilisis. Nulla suscipit quis arcu ut volutpat. Cras consequat massa elit, eu tincidunt libero blandit a. Pellentesque imperdiet viverra dui quis porttitor.
+                </p>
+            </article>
+            <br>
+            <!-- FORMULARIO -->
+            <form method="post" class="gridForm" novalidate>
+                <div class="gridNombre">
+                    <label for="Nombre">Nombre:</label><br/>
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Escrite tu nombre" required="true"> <br/>
+                </div>
+                <div class="gridApellido">
+                    <label for="Apellido">Apellido:</label><br/>
+                    <input type="text" id="Apellido" name="Apellido" placeholder="Escribe tu apellido" required="true"> <br/>
+                </div>
+                <div class="gridEmail">
+                    <label for="email">Email:</label> <br>
+                    <input type="email" id="email" name="email"> <br>
+                </div>
+                <div class="gridEdad">
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" id="edad" name="edad"><br>
+                </div>
+                <div class="gridLugar">
+                    <p>Vives en Chile?</p>
+                    <label for="si">Si</label>
+                        <input type="radio" name="pais" id="si">
+                    <label for="no">No</label>
+                        <input type="radio" name="pais" id="no">
+                </div>
+                <div class="gridPlataforma">
+                    <p>¿En que plataforma juegas más?</p>
+                    <select name="" id="">
+                        <option value="PC">PC</option>
+                        <option value="PlayStation">PlayStation</option>
+                        <option value="XBOX">XBOX</option>
+                        <option value="Nintendo">Nintendo</option>
+                    </select>
+                </div>
+                <div class="gridContenido">
+                    <label for="Contenido">Contenido</label><br/>
+                    <input type="text" id="Contenido" name="Contenido" required="true">
+                </div>
+                <div class="gridLimpiar">
+                    <button type="reset">LIMPIAR</button>
+                </div>
+                <div class="gridEnviar">
+                    <input type="submit" value="Enviar">
+                </div>
+              </form>
+        </section>
+    </div>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="footer">
+        <div>
+            <img src="./img/mb-iso-white.png" width="120px" alt="">
+        </div>
+        <div>
+            <a href="https://facebook.com"><img class="sidebar__icon" src="./img/icons/facebook-white.svg" alt="facebook"></a>
+            <a href="https://twitter.com"><img class="sidebar__icon" src="./img/icons/twitter-white.svg" alt="twitter"></a>
+            <a href="https://youtube.com"><img class="sidebar__icon" src="./img/icons/youtube-white.svg" alt="youtube"></a>
+            <a href="https://instagram.com"><img class="sidebar__icon" src="./img/icons/instagram-white.svg" alt="instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
