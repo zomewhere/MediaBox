@@ -406,7 +406,8 @@ aside article h1 {
     display: flex;
     height: 100px;
     justify-content: space-between;
-    background-color: #2846b2;
+    background: rgb(49,73,174);
+    background: linear-gradient(45deg, rgba(49,73,174,1) 0%, rgba(113,87,220,1) 100%);
     padding: 2%;
     color: white;
     align-items: center;
