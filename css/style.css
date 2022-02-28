@@ -82,12 +82,22 @@ p {
 .grid-item--img {
     display: grid;
     grid-row: 1 / 4;
+    overflow: hidden;
 }
+
 
 .grid-item--img img {
     display: cover;
     width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
 }
+
+.grid-item--img img:hover {
+    transform: scale(1.3);
+    overflow: hidden;
+}
+
 
 .grid-item--tittle {
     margin-left: 20px;
@@ -139,6 +149,7 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    overflow: hidden;
 }
 
 .bannerCard {
