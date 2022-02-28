@@ -268,6 +268,18 @@ nav ul li a:hover {
     width: 550px;
     margin: 25px;
     margin: 3%;
+    overflow: hidden;
+}
+
+.categoryNoticas__card img {
+    transition: transform 0.5s;
+    width: 100%;
+    
+}
+
+.categoryNoticas__card img:hover{
+    transform: scale(1.1);
+    overflow: hidden;
 }
 
 .categoryTittle {
