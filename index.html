@@ -5,162 +5,213 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bs_style.css">
     <title>Blog sobre entretención</title>
 </head>
 
 <body>
-    <!-- LOGOTIPO -->
-    <header class="header">
-        <img src="./img/Media-Box-Logo.png" width="200px" alt="" />
-    </header>
-
-    <!-- MENU DE NAVEGACION -->
-    <nav class="header">
-        <ul class="header__nav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="videojuegos.html">Videojuegos</a></li>
-            <li><a href="peliculas.html">Peliculas</a></li>
-            <li><a href="series.html">Series</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <!-- BANNER HERO -->
-    <section class="banner">
-        <div>
-            <div class="bannerCard">
-                <h1 class="bannerCard__tittle">THE LAST OF US 2</h1>
-                <p class="bannerCard__text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
-                    numquam perspiciatis porro natus repellat voluptatem ipsum, doloribus,
-                    suscipit qui animi dolorem asperiores tenetur nulla deserunt.
-                    Accusamus voluptatem eum incidunt veritatis.
-                </p>
-                <a href="#" class="boton1">Leer mas...</a>
+<!-- NAVBAR     -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/Media-Box-Logo.png" alt="MEDIA BOX Logo" width="150px">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fs-6 fw-bold">
+              <a class="nav-link" href="./index.html">HOME</a>
+              <a class="nav-link" href="./videojuegos.html">VIDEOJUEGOS</a>
+              <a class="nav-link" href="./peliculas.html">PELICULAS</a>
+              <a class="nav-link" href="./series.html">SERIES</a>
+              <a class="nav-link" href="./contacto.html">CONTACTO</a>
             </div>
         </div>
+    </nav>
+</header>
+<!-- HERO BANNER -->
+<main>
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button " data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/banne-home-the-batman.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>THE BATMAN</h2>
+                  <p>Fuimos al estreno y tenemos Review</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/banne-home-barry.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>BARRY</h2>
+                  <p>Aun esperamos una nueva temporada</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/banner-home.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>THE LAST OF US 2</h5>
+                  <p>Se aproxima una NEXT-GEN Update para PS5</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
-
-    <!-- CONTENIDO WEB -->
-    <div class="padreFlex">
-        <!-- ARTICULOS -->
-        <section class="flexSection">
-            <h1>Ultimas noticias</h1>
-            <div class="grid-container">
-                <div class="grid-item--img"><img class="img" src="img/farcry6.jpg" alt="" /></div>
-                <div class="grid-item--tittle">
-                    <h2>Trailer de Lanzamiento FarCry 6</h2>
+<!-- ULTIMAS NOTICIAS -->
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
+          <h1>ÚLTIMAS NOTICIAS</h1>
+          <div class="card mb-3" style="max-width: 95%;">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="./img/farcry6.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h2 class="card-title">Trailer de lanzamiento FarCry 6</h2>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, eligendi vel.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <div class="d-grid gap-2 end">
+                    <a class="btn btn-primary" href="./posts/farcry6.html" role="button">Leer Más</a>
+                  </div>
                 </div>
-                <div class="grid-item--text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-                        perspiciatis blanditiis doloribus amet dolores recusandae
-                        molestias, itaque labore quasi nesciunt libero cumque aut
-                        excepturi minima, error ipsa iure
-                    </p>
-                </div>
-                <div class="grid-item--boton">
-                    <a class="boton2" href="./posts/farcry6.html">Leer Mas...</a>
-                </div>
+              </div>
             </div>
-
-            <div class="grid-container">
-                <div class="grid-item--img"><img src="img/top10.jpg" alt="" /></div>
-                <div class="grid-item--tittle">
-                    <h2>TOP 10 Peliculas del 2021</h2>
+          </div>
+          <div class="card mb-3" style="max-width: 95%;">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="./img/top10.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h2 class="card-title">TOP 10 Peliculas del 2021</h2>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, eligendi vel.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-primary" href="./posts/top10.html" role="button">Leer Más</a>
+                  </div>
                 </div>
-                <div class="grid-item--text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-                        perspiciatis blanditiis doloribus amet dolores recusandae
-                        molestias, itaque labore quasi nesciunt libero cumque aut
-                        excepturi minima, error ipsa iure
-                    </p>
-                </div>
-                <div class="grid-item--boton">
-                    <a class="boton2" href="./posts/top10.html">Leer Mas...</a>
-                </div>
+              </div>
             </div>
-
-            <div class="grid-container">
-                <div class="grid-item--img">
-                    <img src="img/series/euphoria.jpg" alt="" />
+          </div>
+          <div class="card mb-3" style="max-width: 95%;">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="./img/series/euphoria.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h2 class="card-title">Temporada 2 de EUPHORIA</h2>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, eligendi vel.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-primary" href="#" role="button">Leer Más</a>
+                  </div>
                 </div>
-                <div class="grid-item--tittle">
-                    <h2>Temporada 2 de EUPHORIA</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 95%;">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="./img/tlu2_mini.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h2 class="card-title">The last of Us 2 UPDATE</h2>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, eligendi vel. Repellendus quibusdam rerum praesentium atque at impedit laboriosam modi. Natus quibusdam quod tenetur sapiente dignissimos quam veritatis ex voluptatem.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-primary" href="./posts/farcry6.html" role="button">Leer Más</a>
+                  </div>
                 </div>
-                <div class="grid-item--text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-                        perspiciatis blanditiis doloribus amet dolores recusandae
-                        molestias, itaque labore quasi nesciunt libero cumque aut
-                        excepturi minima, error ipsa iure
-                    </p>
-                </div>
-                <div class="grid-item--boton">
-                    <a class="boton2" href="#">Leer Mas...</a>
-                </div>
+              </div>
+            </div>
+          </div>
+          <div class="containter">
+            <div class="row">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination ">
+                    <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </div>
+          </div>
+        </div>
+        
+<!-- SIDEBAR -->
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+          <h1>SIGUENOS</h1>
+          <div>
+            <i class="bi bi-facebook p-3" style="font-size: 50px; color:black"></i>
+            <i class="bi bi-twitter p-3" style="font-size: 50px; color:black"></i>
+            <i class="bi bi-youtube p-3" style="font-size: 50px; color:black"></i>
+            <i class="bi bi-instagram p-3" style="font-size: 50px; color:black"></i>
+          </div>
+          <div class="pt-3">
+            <img src="img/playstation-store-holiday-sale-2021.jpg" class="img-fluid" alt="">
+          </div>
+          <h1 class="pt-5" >TRAILERS</h1>
+          <section>
+            <div class="pt-3">
+                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/BwPL0Md_QFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Lightyear Teaser Trailer</h3>
+                <p>27 OCT 2022 | 1:33</p>
+            </div>
+            <div class="pt-3">
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/UxDWGW7Z67I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Horizon Forbiden West - Story Trailer</h3>
+                <p>19 ENE 2022 | 3:04</p>
             </div>
         </section>
-
-        <!-- SIDEBAR -->
-        <aside class="flexAside">
-            <article>
-                <h1>Siguenos</h1>
-                <div class="sidebar">
-                    <a href="https://facebook.com"><img class="sidebar__icon" src="./img/icons/facebook.svg"
-                            alt="facebook" /></a>
-                    <a href="https://twitter.com"><img class="sidebar__icon" src="./img/icons/twitter.svg"
-                            alt="twitter" /></a>
-                    <a href="https://youtube.com"><img class="sidebar__icon" src="./img/icons/youtube.svg"
-                            alt="youtube" /></a>
-                    <a href="https://instagram.com"><img class="sidebar__icon" src="./img/icons/instagram.svg"
-                            alt="instagram" /></a>
-                </div>
-                <div>
-                    <a href="https://store.playstation.com"><img src="./img/playstation-store-holiday-sale-2021.jpg"
-                            width="300px" alt="Holiday Sale" /></a>
-                </div>
-                <h1>Trailers</h1>
-                <section>
-                    <div class="sidebar__trailer">
-                        <iframe width="300" height="170" src="https://www.youtube.com/embed/BwPL0Md_QFQ"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <h3>Lightyear Teaser Trailer</h3>
-                        <p>27 OCT 2022 | 1:33</p>
-                    </div>
-                    <div class="sidebar__trailer">
-                        <iframe width="300" height="170" src="https://www.youtube.com/embed/UxDWGW7Z67I"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <h3>Horizon Forbiden West - Story Trailer</h3>
-                        <p>19 ENE 2022 | 3:04</p>
-                    </div>
-                </section>
-            </article>
-        </aside>
+        </div>
+      </div>
+    </div>
+      
     </div>
 
-    <!-- PIE DE PAGINA -->
+<!-- FOOTER -->
+  <footer>
     <footer class="footer">
-        <div>
-            <img src="./img/mb-iso-white.png" width="120px" alt="" />
-        </div>
-        <div>
-            <a href="https://facebook.com"><img class="sidebar__icon" src="./img/icons/facebook-white.svg"
-                    alt="facebook" /></a>
-            <a href="https://twitter.com"><img class="sidebar__icon" src="./img/icons/twitter-white.svg"
-                    alt="twitter" /></a>
-            <a href="https://youtube.com"><img class="sidebar__icon" src="./img/icons/youtube-white.svg"
-                    alt="youtube" /></a>
-            <a href="https://instagram.com"><img class="sidebar__icon" src="./img/icons/instagram-white.svg"
-                    alt="instagram" /></a>
-        </div>
+      <div>
+          <img src="./img/mb-iso-white.png" width="120px" alt="">
+      </div>
+      <div>
+          <a href="https://facebook.com"><img class="sidebar__icon" src="./img/icons/facebook-white.svg" alt="facebook"></a>
+          <a href="https://twitter.com"><img class="sidebar__icon" src="./img/icons/twitter-white.svg" alt="twitter"></a>
+          <a href="https://youtube.com"><img class="sidebar__icon" src="./img/icons/youtube-white.svg" alt="youtube"></a>
+          <a href="https://instagram.com"><img class="sidebar__icon" src="./img/icons/instagram-white.svg" alt="instagram"></a>
+      </div>
     </footer>
+  </footer>
+</main>
+    
 </body>
 
 </html>
