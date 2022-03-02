@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    background: rgb(49,73,174);
+    background: linear-gradient(45deg, rgba(49,73,174,1) 0%, rgba(113,87,220,1) 100%);
+    padding: 2%;
+    color: white;
+    align-items: center;
+}
+
+.sidebar__icon {
+    display: inline;
+    width: 70px;
+    height: 70px;
+    margin: 20px 0px;
+    padding-right: 25px;
+}
+
+.bannerJuegos {
+    background-image: url(../img/videogames_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 0 50px;
+}
+
+.bannerCategory__title{
+    font-size: 5vw;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* @media (max-width: 768px) {
+    .break {
+        display: none;
+    }
+} */
