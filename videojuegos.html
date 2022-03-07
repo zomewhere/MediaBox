@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/bs_style.css">
-    <title>Blog sobre entretención</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bs_style.css">
+  <title>VIDEOJUEGOS / MEDIA BOX</title>
 </head>
-
 <body>
-<!-- NAVBAR     -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/Media-Box-Logo.png" alt="MEDIA BOX Logo" width="150px">
-                </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav fs-6 fw-bold">
-                <a class="nav-link" href="./index.html">HOME</a>
-                <a class="nav-link" href="./videojuegos.html">VIDEOJUEGOS</a>
-                <a class="nav-link" href="./peliculas.html">PELICULAS</a>
-                <a class="nav-link" href="./series.html">SERIES</a>
-                <a class="nav-link" href="./contacto.html">CONTACTO</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <!-- NAVBAR     -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand logo_custom" href="../MEDIA BOX/index.html">
+          <img src="./img/media-box-logo.svg" alt="MEDIA BOX Logo" width="150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav fs-6 fw-bold navbar_custom--text">
+            <a class="nav-link" href="./index.html">HOME</a>
+            <a class="nav-link text-white active" href="./videojuegos.html">VIDEOJUEGOS</a>
+            <a class="nav-link" href="./peliculas.html">PELICULAS</a>
+            <a class="nav-link" href="./series.html">SERIES</a>
+            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
     <!-- BANNER HERO -->
-    <section class="bannerJuegos">
-        <h1 class="bannerCategory__title">VIDEOJUEGOS</h1>
+    <section class="bannerSection">
+        <h1 class="bannerSection--title">VIDEOJUEGOS</h1>
     </section>
-    
     <!-- CONTENIDO WEB -->
-    <div>
-
         <!-- ARTICULOS -->
-        <div class="row row-cols-1 row-cols-md-2 g-4 m-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 m-3">
             <div class="col">
               <div class="card">
                 <img src="./img/videojuegos/farcry6.jpg" class="card-img-top" alt="...">
@@ -93,6 +96,30 @@
                 </div>
               </div>
             </div>
+            <div class="col">
+              <div class="card">
+                <img src="./img/videojuegos/cyberpunk-2077.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title h1">Parche 1.5 para Cyberpunk 2077</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores sunt explicabo, blanditiis maiores facere, eligendi cumque esse laboriosam dolor deleniti quia doloremque quos provident voluptates ex dicta. Aut, velit dolorum?</p>
+                  <div class="d-grid gap-2 end">
+                    <a class="btn btn-primary" href="./posts/farcry6.html" role="button">Leer Más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./img/videojuegos/elden-ring.jpg" class="card-img-top" alt="Elden Ring">
+                <div class="card-body">
+                  <h5 class="card-title h1">Elden Ring</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores sunt explicabo, blanditiis maiores facere, eligendi cumque esse laboriosam dolor deleniti quia doloremque quos provident voluptates ex dicta. Aut, velit dolorum?</p>
+                  <div class="d-grid gap-2 end">
+                    <a class="btn btn-primary" href="./posts/farcry6.html" role="button">Leer Más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
     </div>
     <div class="containter p-4">
@@ -108,18 +135,22 @@
             </nav>
         </div>
     </div>
-
     <!-- PIE DE PAGINA -->
-    <footer class="footer">
+    <footer>
+      <div class="footer">
         <div>
-            <img src="./img/mb-iso-white.png" width="120px" alt="">
+          <img src="./img/mb-iso-white.png" width="120px" alt="">
         </div>
-        <div>
-            <a href="https://facebook.com"><img class="sidebar__icon" src="./img/icons/facebook-white.svg" alt="facebook"></a>
-            <a href="https://twitter.com"><img class="sidebar__icon" src="./img/icons/twitter-white.svg" alt="twitter"></a>
-            <a href="https://youtube.com"><img class="sidebar__icon" src="./img/icons/youtube-white.svg" alt="youtube"></a>
-            <a href="https://instagram.com"><img class="sidebar__icon" src="./img/icons/instagram-white.svg" alt="instagram"></a>
+        <div class="footer-icons">
+          <a href="#"><i class="bi bi-facebook p-3" style="font-size: 50px; color:white"></i></a>
+          <a href="#"><i class="bi bi-twitter p-3" style="font-size: 50px; color:white"></i></a>
+          <a href="#"><i class="bi bi-youtube p-3" style="font-size: 50px; color:white"></i></a>
+          <a href="#"><i class="bi bi-instagram p-3" style="font-size: 50px; color:white"></i></a>
         </div>
+      </div>  
+    <div class="copyright">
+        Proyecto de Desarrollo Web para Coder House 2022
+    </div>
     </footer>
 </body>
 </html>
