@@ -1,0 +1,53 @@
+// HERO
+.carousel-inner {
+    margin-top: 60px;
+    .carousel-item{
+        .carousel-caption{
+            text-shadow: 2px 2px 5px #000;
+            h2 {
+                font-family: $fontPrimary;
+                font-size: $fontSizeXL;
+                font-weight: $fontW800;
+                letter-spacing: 2px;
+            }
+            p {
+                font-family: $fontSecondary;
+                font-size: $fontSizeXS;
+                font-weight: $fontW500;
+            }
+        }
+    }
+}
+
+// CUERPO DE ARTICULO
+.container{
+    article {
+        padding-top: 20px;
+        h2 {
+            // font: $fontTitle;
+            font-family: $fontPrimary;
+            font-size: $fontSizeL;
+            font-weight: $fontW700;
+            color: $colorSecondary;
+            border-left: 5px solid $colorPrimary;
+            padding: 0 10px;
+        }
+        p {
+            padding-top: 10px;
+            text-align: justify;
+        }
+
+        b {
+            color: $colorPrimary;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+            transition: transform 0.5s;
+        }
+        img:hover {
+            transform: translate(5px, -10px);
+        }
+    }
+}

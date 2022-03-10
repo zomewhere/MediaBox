@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    background: linear-gradient(-45deg, #52237b, #7157dc);
+    padding: 5%;
+    color: white;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+}
+
+.copyright {
+    background-color: #52237b;
+    color: azure;
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+// COLORES
+$colorBg: #fff;
+$colorBgAlt: #f8f9fa;
+$colorPrimary: #7650e1;
+$colorSecondary: #3b2d74;
+$colorLight: #03c7ee;
+$colorContrast: #0e43a3;
+$colorAlt: #333333;
+
+$gradientPrimary: linear-gradient(320deg, #52237b 0%, #7157dc 100%);
+
+
+// TIPOGRAFIA
+$fontPrimary: "Cairo";
+$fontSecondary: "Montserrat";
+
+$fontSizeXL: 50px;
+$fontSizeL: 40px;
+$fontSizeM: 35px;
+$fontSizeS: 30px;
+$fontSizeXS: 20px;
+$fontSizeP: 16px;
+
+// Cairo
+$fontW800: 800;
+$fontW700: 700;
+
+// Montserrat
+$fontW500: 500;
+$fontW300: 300;
+
+
+$fontTitle: $fontW800 $fontSizeXL $fontPrimary; 
+$fontSubtitle: $fontW500 $fontSizeS $fontSecondary;
