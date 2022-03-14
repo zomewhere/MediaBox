@@ -6,3 +6,49 @@
 p {
     font-family: Montserrat;
 }
+
+
+// EXTEND
+.botonCreditos {
+    font-family: $fontPrimary;
+    font-size: $fontSizeS;
+    background-color: $colorPrimary;
+    border-radius: 10px;
+    padding: 0 15px;
+    color: $colorBg;
+    max-width: 50%;
+    text-align: center;
+    transition: 0.5s;
+    a{
+        text-decoration: none;
+        font-weight: $fontW800;
+        color: $colorBg;
+    }
+    &:hover {
+        letter-spacing: 3px;
+        transform: translate(5px, -10px);
+        box-shadow: -5px 5px 1px #3b2d74, -10px 10px 2px #5542a7, -15px 15px 3px #7057db, -20px 20px 4px #816eff;
+    }
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
+}
+
+// MIXIN
+@mixin progressbar ($colorBG, $color, $porcentaje) {
+    background-color: $colorBG;
+    color: $color;
+    width: $porcentaje;
+    font-size: 15px;
+    font-family: $fontPrimary;
+    padding: 2px 0 2px 5px;
+    margin-top: 10px;
+}
+
+// MAP
+$social: (
+    "facebook": #385599,
+    "twitter": #1c96e8,
+    "youtube": #f60002,
+    "instagram": #bd0097
+    );

@@ -23,7 +23,7 @@
 .container{
     article {
         padding-top: 20px;
-        h2 {
+        h1, h2 {
             // font: $fontTitle;
             font-family: $fontPrimary;
             font-size: $fontSizeL;
@@ -48,6 +48,9 @@
         }
         img:hover {
             transform: translate(5px, -10px);
+        }
+        .creditos {
+            @extend .botonCreditos;
         }
     }
 }

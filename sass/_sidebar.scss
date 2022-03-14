@@ -9,21 +9,48 @@ aside {
         padding: 0 10px;
     }
 }
-
-// HEREDADO
 .social-icons {
     display: flex;
     width: 100%;
     justify-content: space-between;
+
+    a {
+        color: $colorPrimary;
+        transition: 0.5s;
+    }
+    .bi-facebook {
+        color: map-get($social, "facebook");
+    }
+    .bi-twitter {
+        color: map-get($social, "twitter");
+    }
+    .bi-youtube {
+        color: map-get($social, "youtube");
+    }
+    .bi-instagram {
+        color: map-get($social, "instagram");
+    }
+    a:hover {
+        transform: translate(5px, -10px);
+    }
 }
 
-.social-icons a {
-    transition: transform 0.5s;    
+.gustar {
+    font-family: $fontPrimary;
+    font-size: $fontSizeM;
+    font-weight: $fontW800;
+    .si {
+        @include progressbar (green, white, 80%)
+    }
+    .no {
+        @include progressbar (red, white, 20%)
+    }
 }
 
-.social-icons a:hover {
-    transform: translate(0px, -10px);
-}
+
+// HEREDADO
+
+
 
 .publicidad {
     border-radius: 10px;
