@@ -1,0 +1,36 @@
+.bannerSection {
+    margin-top: 80px;
+    background-image: url(../img/section-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 0 50px;
+    &--title {
+        text-align: center;
+    font-family: $fontPrimary;
+    font-size: $fontSizeXL+30px;
+    font-weight: $fontW700;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: -10px 10px 1px #3b2d74, -20px 20px 2px #5542a7, -30px 30px 3px #7057db, -40px 40px 4px #816eff;
+    }
+}
+
+.card {
+    overflow: hidden;
+    .card-img-top {
+        max-height: 350px;
+        object-fit: cover;
+        object-position: top;
+        transition: transform 0.5s;
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+}

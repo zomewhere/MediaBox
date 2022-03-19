@@ -1,13 +1,6 @@
 // SIDEBAR GLOBAL
 aside {
     margin-top: 10px;
-    h1 {
-        font-family: $fontPrimary;
-        font-size: $fontSizeL;
-        font-weight: $fontW700;
-        border-left: 10px solid $colorPrimary;
-        padding: 0 10px;
-    }
 }
 .social-icons {
     display: flex;
@@ -47,35 +40,27 @@ aside {
     }
 }
 
-
-// HEREDADO
-
-
-
 .publicidad {
     border-radius: 10px;
     transition: transform 0.5s;
-}
-
-.publicidad:hover {
-    transform: translate(5px, -10px);
+    &:hover {
+        transform: translate(5px, -10px);
+    }
 }
 
 .video{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-}
-
-.video h3 {
-    width: 60%;
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.video p {
-    text-align: right;
-    width: 40%;
-    font-size: 14px;
-    color: grey;
+    h3 {
+        width: 60%;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    p {
+        text-align: right;
+        width: 40%;
+        font-size: 14px;
+        color: grey;
+    }
 }

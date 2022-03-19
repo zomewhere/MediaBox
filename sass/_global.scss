@@ -4,11 +4,25 @@
 }
 
 p {
-    font-family: Montserrat;
+    font-family: $fontSecondary;
 }
 
 
 // EXTEND
+.mediaTitle {
+    border-left: 10px solid #7157dc;
+    margin-bottom: 10px;
+    padding: 10px 0 1px 10px;
+    h1 {
+        font-family: Cairo;
+        font-size: 40px;
+        color: #333333;
+        font-weight: 700;
+        letter-spacing: 3px;
+        padding-left: 10px;
+    }
+}
+
 .botonCreditos {
     font-family: $fontPrimary;
     font-size: $fontSizeS;
@@ -32,6 +46,38 @@ p {
     @media (max-width: 768px) {
         max-width: 100%;
     }
+}
+
+.btn {
+    width: 250px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: $fontPrimary;
+    font-weight: $fontW700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: $colorPrimary;
+    border-color: none;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    &::after {
+        content: '❱';
+        position: absolute;
+        opacity: 0;  
+        transition: 0.5s;
+    }
+    &:hover {
+        background-color: #5542a7;
+        background-image: linear-gradient(320deg, #52237b 0%, #7157dc 100%);
+        padding-right: 40px;
+        padding-left:8px;
+    }
+    &:hover:after {
+        opacity: 1;
+        right: 10px;
+      }
+
 }
 
 // MIXIN

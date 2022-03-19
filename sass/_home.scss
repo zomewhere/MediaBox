@@ -1,0 +1,38 @@
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    min-height: 300px;
+    .card-title{
+        border-left: 5px solid $colorPrimary;
+        padding-left: 10px;
+        font-family: $fontPrimary;
+        font-size: $fontSizeS;
+        font-weight: $fontW700;
+        color: $colorAlt;
+    }
+}
+
+.img_home {
+    display: flex;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    &:hover {
+        transform: translateX(-5px);
+    }
+}
+
+.pagination {
+    font-family: $fontPrimary;
+    font-weight: $fontW700;
+    .page-link {
+        color: $colorPrimary;
+    }
+}
+
+.page-item.active .page-link {
+    background-color: $colorPrimary;
+    border-color: $colorPrimary;
+}
