@@ -64,3 +64,32 @@ aside {
         color: grey;
     }
 }
+
+.card-body.editSidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    .card-title{
+        border-left: 5px solid $colorPrimary;
+        padding-left: 10px;
+        font-family: $fontPrimary;
+        font-size: $fontSizeXS;
+        font-weight: $fontW700;
+        color: $colorAlt;
+    }
+    .btn {
+        width: 100px;
+        height: 40px;
+    }
+}
+
+.img_sidebar {
+    display: flex;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    &:hover {
+        transform: translateX(-5px);
+    }
+}
