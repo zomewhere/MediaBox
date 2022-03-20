@@ -1,0 +1,5 @@
+node_modules/
+/css/bs_style.css
+/css/style.css
+package-lock.json
+package.json
