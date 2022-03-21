@@ -54,3 +54,19 @@
         }
     }
 }
+
+.tabla {
+    width: 100%;
+    font-family: Cairo;
+    background-color: #2846b2;
+    border: 3px solid #2846b2;
+    color: #000;
+    td, th {
+        width: 10% 30% 30% 20%;
+        border: 1px solid #2846b2;
+        border-spacing: 0;
+        background-color: #ffffff;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+}
