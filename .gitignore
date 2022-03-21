@@ -1,4 +1,4 @@
-node_modules/
+/node_modules/
 /css/bs_style.css
 /css/style.css
 package-lock.json
