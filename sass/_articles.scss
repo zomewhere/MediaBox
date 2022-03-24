@@ -24,9 +24,16 @@
     article {
         padding-top: 20px;
         h1, h2 {
-            // font: $fontTitle;
             font-family: $fontPrimary;
             font-size: $fontSizeL;
+            font-weight: $fontW700;
+            color: $colorSecondary;
+            border-left: 5px solid $colorPrimary;
+            padding: 0 10px;
+        }
+        h3 {
+            font-family: $fontPrimary;
+            font-size: $fontSizeM;
             font-weight: $fontW700;
             color: $colorSecondary;
             border-left: 5px solid $colorPrimary;
@@ -37,7 +44,7 @@
             text-align: justify;
         }
 
-        b {
+        b, strong {
             color: $colorPrimary;
         }
         img {
